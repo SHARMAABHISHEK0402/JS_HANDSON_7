@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson-7</title>
+</head>
+<body>
+    <h1>JS Handson 7- Objects</h1>
+    <div>
+        <h2> 1.Create a Function</h2>
+        <div>
+            <pre>
+              function Check(obj1){
+                obj1.setter = function(){
+                  console.log(obj1.name);
+                };
+             }
+               
+
+
+            </pre>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <div>
+        <h2> 2. Delete a Parameter</h2>
+        <div>
+            <pre>
+                
+              function Check(obj1) {
+     
+ 
+                delete obj1.rollno;
+                 return obj1;
+                              }
+              
+            </pre>
+        </div>
+    </div>
+
+
+    <br>
+    <hr>
+    <br>
+
+    
+
+    <div>
+        <h2>3. Check whether the Package is Dream Package or not </h2>
+        <div>
+            <pre>
+              function Check(obj1) {
+                if(obj1.salary > 500000){
+                  return 'Dream';
+                }
+                else{
+                  return 'NotDream'
+                }
+            }
+            
+
+            </pre>
+        </div>
+    </div>
+
+
+    <br>
+    <hr>
+    <br>
+
+
+
+    <div>
+        <h2>4. Check whether the Object has a parameter or not</h2>
+        <div>
+            <pre>
+              function Check(obj1) {
+                let count = 0;
+                 for (let i in obj1){
+                   count ++;
+                  }
+                 if (count === 0){
+                 return "false";
+                 }else{
+                 return "true";
+                 } 
+            }
+            
+            
+            </pre>
+        </div>
+    </div>
+    
+
+    <br>
+    <hr>
+    <br>
+
+    
+    <div>
+        <h2> 5.Merge the Objects</h2>
+        <div>
+            <pre>
+              function Check(obj1,obj2) {
+                let obj3 = Object.assign({}, obj1, obj2);
+                return obj3;
+          }
+          
+           
+
+           </pre>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+        <h2>6.Object Multiplyer<h2>
+        <div>
+            <pre>
+
+              function Check(a,obj1) {
+                obj1.id = obj1.id*a;
+                obj1.houseno = obj1.houseno*a;
+                return obj1;
+               }
+              </pre>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+    
+    <div>
+        <h2>7.Find the  sum of Data Members</h2>
+        <div>
+            <pre>
+              function Check(obj1) {
+                return obj1.p1 + obj1.p2 + obj1.p3;  
+             }        </pre>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div>
+        <h2> 8. Check whether the Objects are same or not.</h2>
+        <div>
+            <pre>
+              function check(obj1,a,b) {
+                let new_name = obj1.name;
+                let new_id = obj1.id;
+                   if (new_name == a && new_id == b){
+                   return "true";
+                   }else{
+                   return "false";
+                               }
+           }
+           
+                            </pre>
+        </div>
+    </div>
+
+</body>
+</html>
